@@ -1,3 +1,6 @@
+html{
+	height: 100%;
+}
 body{
 	background: #cc2a13; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #cc2a13 0%, #60070d 100%); /* FF3.6+ */
@@ -35,7 +38,7 @@ body{
 	height: 500px;
 	margin: -130px 0 0 80px; 
 }
-/*.flash-upper{
+.flash-upper{
 	position: absolute;
 	animation: upper-animate 2.4s linear infinite;
 	-webkit-animation: upper-animate 2.4s linear infinite;
@@ -46,7 +49,7 @@ body{
 	animation: lower-animate 2.4s linear infinite;
 	-webkit-animation: lower-animate 2.4s linear infinite;
 	-moz-animation: lower-animate 2.4s linear infinite;
-}*/
+}
 .tri-1{
 	width: 0;
 	height: 0;
@@ -145,4 +148,112 @@ body{
 	border-color: transparent transparent #F5D75D transparent;
 	position: absolute;
 	margin: 0px 0 0 -34px;
+}
+@keyframes upper-animate{
+	0%{
+		margin-top: -1000%;
+		margin-left: 1000%;
+	}
+	30%{
+		margin-top: -10%;
+		margin-left: 10%;
+	}
+	60%{
+		margin-top: 10%;
+		margin-left: -10%;
+	}
+	100%{
+		margin-top: 1000%;
+		margin-left: -1000%;
+	}
+}
+@keyframes lower-animate{
+	0%{
+		margin-top: 1000%;
+		margin-left: -1000%;
+	}
+	30%{
+		margin-top: 10%;
+		margin-left: -10%;
+	}
+	60%{
+		margin-top: -10%;
+		margin-left: 10%;
+	}
+	100%{
+		margin-top: -1000%;
+		margin-left: 1000%;
+	}
+}
+@-webkit-keyframes upper-animate{
+	0%{
+		margin-top: -1000%;
+		margin-left: 1000%;
+	}
+	30%{
+		margin-top: -10%;
+		margin-left: 10%;
+	}
+	60%{
+		margin-top: 10%;
+		margin-left: -10%;
+	}
+	100%{
+		margin-top: 1000%;
+		margin-left: -1000%;
+	}
+}
+@-webkit-keyframes lower-animate{
+	0%{
+		margin-top: 1000%;
+		margin-left: -1000%;
+	}
+	30%{
+		margin-top: 10%;
+		margin-left: -10%;
+	}
+	60%{
+		margin-top: -10%;
+		margin-left: 10%;
+	}
+	100%{
+		margin-top: -1000%;
+		margin-left: 1000%;
+	}
+}
+@-moz-keyframes upper-animate{
+	0%{
+		margin-top: -1000%;
+		margin-left: 1000%;
+	}
+	30%{
+		margin-top: -10%;
+		margin-left: 10%;
+	}
+	60%{
+		margin-top: 10%;
+		margin-left: -10%;
+	}
+	100%{
+		margin-top: 1000%;
+		margin-left: -1000%;
+	}
+}
+@-moz-keyframes lower-animate{
+	0%{
+		margin-top: 1000%;
+		margin-left: -1000%;
+	}
+	30%{
+		margin-top: 10%;
+		margin-left: -10%;
+	}
+	60%{
+		margin-top: -10%;
+		margin-left: 10%;
+	}
+	100%{
+		margin-top: -1000%;
+		margin-left: 1000%;
+	}
 }
