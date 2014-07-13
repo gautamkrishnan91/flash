@@ -1,0 +1,148 @@
+body{
+	background: #cc2a13; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #cc2a13 0%, #60070d 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#cc2a13), color-stop(100%,#60070d)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #cc2a13 0%,#60070d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #cc2a13 0%,#60070d 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #cc2a13 0%,#60070d 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #cc2a13 0%,#60070d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc2a13', endColorstr='#60070d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	overflow: hidden;
+}
+.flash-wrapper{
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 2px solid #CCC;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -150px;
+	box-shadow: 0px 0px 15px #ccc;
+}
+.flash-container{
+	position: absolute;
+	width: 250px;
+	height: 500px;
+	margin: -130px 0 0 80px; 
+}
+/*.flash-upper{
+	position: absolute;
+	animation: upper-animate 2.4s linear infinite;
+	-webkit-animation: upper-animate 2.4s linear infinite;
+	-moz-animation: upper-animate 2.4s linear infinite;
+}
+.flash-lower{
+	position: absolute;
+	animation: lower-animate 2.4s linear infinite;
+	-webkit-animation: lower-animate 2.4s linear infinite;
+	-moz-animation: lower-animate 2.4s linear infinite;
+}*/
+.tri-1{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0px 150px 38px;
+	border-color: transparent transparent #f4c28d transparent;
+	transform: skew(-35deg);
+	-webkit-transform: skew(-35deg);
+	-moz-transform: skew(-35deg);
+	margin: 100px;
+	position: absolute;
+	padding-bottom: 2px;
+	z-index: 5;
+}
+.tri-1:before{
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0px 150px 33px;
+	border-color: transparent transparent #F5D75D transparent;
+	margin-left: -35px;
+	position: absolute;
+}
+.tri-2{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0px 150px 35px;
+	border-color: transparent transparent #F5D75D transparent;
+	transform: skew(-35deg) rotate(180deg);
+	-webkit-transform: skew(-35deg) rotate(180deg);
+	-moz-transform: skew(-35deg) rotate(180deg);
+	position: absolute;
+	margin: 210px 0 0 57px;
+	z-index: 10;
+}
+.tri-2-back{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0px 152px 38px;
+	border-color: transparent transparent #f4c28d transparent;
+	transform: skew(-35deg) rotate(180deg);
+	-webkit-transform: skew(-35deg) rotate(180deg);
+	-moz-transform: skew(-35deg) rotate(180deg);
+	position: absolute;
+	margin: 208px 0 0 56px;
+	z-index: 4;
+}
+.tri-3{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0px 150px 35px;
+	border-color: transparent transparent #F5D75D transparent;
+	transform: skew(-35deg);
+	-webkit-transform: skew(-35deg);
+	-moz-transform: skew(-35deg);
+	position: absolute;
+	margin: 210px 0 0 56px;
+	z-index: 10;
+}
+.tri-3-back{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0px 152px 37px;
+	border-color: transparent transparent #f4c28d transparent;
+	transform: skew(-35deg);
+	-webkit-transform: skew(-35deg);
+	-moz-transform: skew(-35deg);
+	position: absolute;
+	margin: 210px 0 0 55px;
+	z-index: 4;
+}
+.tri-4{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0px 150px 38px;
+	border-color: transparent transparent #f4c28d transparent;
+	position: absolute;
+	margin: 320px 0 0 10px;
+	transform: skew(-35deg) rotate(180deg);
+	-webkit-transform: skew(-35deg) rotate(180deg);
+	-moz-transform: skew(-35deg) rotate(180deg);
+	z-index: 5;
+}
+.tri-4:before{
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0px 148px 32px;
+	border-color: transparent transparent #F5D75D transparent;
+	position: absolute;
+	margin: 0px 0 0 -34px;
+}
