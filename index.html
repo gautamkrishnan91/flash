@@ -1,21 +1,28 @@
 <html>
 	<head>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
 		<div class="flash-wrapper">
 			<div class="flash-container">
-				<div class="flash-upper">
+				<div class="flash-upper flash-upper-anim">
 					<div class="tri-1"></div>
 					<div class="tri-2"></div>
 					<div class="tri-2-back"></div>
 				</div>
-				<div class="flash-lower">
+				<div class="flash-lower flash-lower-anim">
 					<div class="tri-3"></div>
 					<div class="tri-3-back"></div>
 					<div class="tri-4"></div>
 				</div>
+			</div>
+			<div class="text">Flash - The fastest man alive.</div>
+			<div class="toggle">
+				<div class="toggle-pause" id="toggleClass"></div>
 			</div>
 		</div>
 	</body>
